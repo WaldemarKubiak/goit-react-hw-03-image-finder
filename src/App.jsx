@@ -1,9 +1,9 @@
 import { Component } from 'react';
-import { Searchbar } from './Searchbar/Searchbar';
-import { ImageGallery } from './ImageGallery/ImageGallery';
-import { Button } from './Button/Button';
-import { Loader } from './Loader/Loader';
-import { Modal } from './Modal/Modal';
+import { Searchbar } from './components/Searchbar/Searchbar';
+import { ImageGallery } from './components/ImageGallery/ImageGallery';
+import { Button } from './components/Button/Button';
+import { Loader } from './components/Loader/Loader';
+import { Modal } from './components/Modal/Modal';
 import { getGallery } from 'services/getGallery';
 import c from './App.module.css';
 
