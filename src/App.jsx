@@ -99,7 +99,7 @@ export class App extends Component {
           <ImageGallery images={images} onImageClick={this.handleImageClick} />
         )}
         {isImages && isLoading === false && (
-          <Button onClick={this.handleLoadMore} />
+          <Button value="Load more" onClick={this.handleLoadMore} />
         )}
         {isLoading && <Loader />}
         {isModalOpen && (

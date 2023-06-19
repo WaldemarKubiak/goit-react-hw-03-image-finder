@@ -1,14 +1,19 @@
 import PropTypes from 'prop-types';
 import c from './Button.module.css';
 
-export const Button = ({ onClick }) => {
+export const Button = ({ value, onClick }) => {
   return (
     <button className={c.Button} type="button" onClick={onClick}>
-      Load more
+      {value}
     </button>
   );
 };
 
 Button.propTypes = {
+  value: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
+};
+
+Button.defaultProps = {
+  value: 'Next page',
 };
